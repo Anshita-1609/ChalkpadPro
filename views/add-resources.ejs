@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Resources</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('header', { u: u }) %>
+        <div class="content">
+            <h1>Add New Resource</h1>
+            <form action="/add-resources" method="POST">
+                <label for="title">Resource Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Resource Description:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <label for="url">Resource URL:</label>
+                <input type="url" id="url" name="url" required>
+
+                <button type="submit">Add Resource</button>
+            </form>
+        </div>
+</body>
+
+</html>

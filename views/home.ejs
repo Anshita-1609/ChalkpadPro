@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <%- include('header', { u: u }) %>
+
+        <div class="content">
+            <div class="timeline">
+                <h2>My Timeline</h2>
+                <div class="circulars-container">
+                    <% circulars.forEach(circular=> { %>
+                        <div class="circular-item">
+                            <i class="fas fa-file-alt circular-icon"></i>
+                            <a href="/circular/<%= circular._id %>">
+                                <%= circular.title %>
+                            </a>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+            <% if (role==='staff' ) { %>
+                <div class="staff-options-container">
+                    <div class="staff-options">
+                        <ul>
+                            <li><a href="/takeAttendance" class="staff-option">Take Attendance</a></li>
+                            <li><a href="/uploadCircular" class="staff-option">Upload Circular</a></li>
+                            <li><a href="/uploadResult" class="staff-option">Upload Result</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+</body>
+
+</html>

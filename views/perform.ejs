@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Details</title>
+    <link rel="stylesheet" href="/perform.css">
+</head>
+
+<body>
+    <%- include('header', { u: u }) %>
+        <div class="content">
+            <h1>Performance Details</h1>
+            <% performance.forEach((sem)=> { %>
+                <div class="semester">
+                    <h2>
+                        <%= sem.semester %>
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Marks</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% sem.subjects.forEach(subject=> { %>
+                                <tr>
+                                    <td>
+                                        <%= subject.subject %>
+                                    </td>
+                                    <td>
+                                        <%= subject.marks %>
+                                    </td>
+                                    <td>
+                                        <%= subject.grade %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <% }) %>
+        </div>
+</body>
+
+</html>

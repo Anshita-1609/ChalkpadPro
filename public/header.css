@@ -1,0 +1,46 @@
+/* Header styling */
+header {
+    background-color: #b11919;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: white;
+    color: black;
+}
+
+header a.active {
+    background-color: white;
+}
+
+.welcome-message {
+    margin-left: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo-container img {
+    height: 80px;
+    width: auto;
+}

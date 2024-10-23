@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Resources</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('header', { u: u }) %>
+        <div class="content">
+            <h1>Resources</h1>
+            <div class="resources-container">
+                <% resources.forEach(resource=> { %>
+                    <div class="resource-item">
+                        <h2>
+                            <%= resource.title %>
+                        </h2>
+                        <p>
+                            <%= resource.description %>
+                        </p>
+                        <a href="<%= resource.url %>" target="_blank">View Resource</a>
+                    </div>
+                    <% }) %>
+            </div>
+            <% if (role==='staff' ) { %>
+                <div class="add-resource">
+                    <a href="/add-resources">Add New Resource</a>
+                </div>
+                <% } %>
+        </div>
+</body>
+
+</html>

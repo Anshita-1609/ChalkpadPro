@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.link-item a:hover {
+    text-decoration: underline;
+}
+
+
+.timeline {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.timeline h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.circulars-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.circular-item {
+    background-color: #ffffff;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33% - 20px);
+    text-align: center;
+}
+
+.circular-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circular-item a {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    font-size: 20px;
+}
+
+.circular-icon {
+    margin-right: 10px;
+    /* Space between the icon and text */
+    color: #1d3eaa;
+    /* Icon color */
+    font-size: 20px;
+    /* Icon size */
+}
+
+.circular-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Additional styles for resources page */
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.resource-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.resource-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.resource-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.resource-item a:hover {
+    text-decoration: underline;
+}
+
+.add-resource {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.add-resource a {
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.add-resource a:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="url"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+
+/* Container for staff options */
+.staff-options-container {
+    position: relative;
+    /* Fixes the container to the screen */
+    right: 0;
+    /* Align to the extreme right */
+    top: 50%;
+    /* Adjusts the position vertically (you can change it as needed) */
+    background-color: #f9f9f9;
+    /* Light background for the options container */
+    border-left: 2px solid #007bff;
+    /* Adds a left border to separate it */
+    padding: 20px;
+    /* Adds space inside the container */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for a modern look */
+    border-radius: 5px 0 0 5px;
+    /* Rounded corners on the left */
+}
+
+.staff-options ul {
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+}
+
+.staff-options li {
+    margin-bottom: 15px;
+    /* Space between list items */
+}
+
+.staff-option {
+    text-decoration: none;
+    /* Remove underline */
+    color: #007bff;
+    /* Blue color for links */
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    font-weight: bold;
+    /* Make the text bold */
+    transition: color 0.3s ease, transform 0.2s ease;
+    /* Smooth hover effects */
+}
+
+.staff-option:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+.staff-option:active {
+    transform: scale(0.95);
+    /* Shrinks when clicked */
+}

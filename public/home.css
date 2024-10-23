@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.logo-container {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo-container img {
+    height: 80px;
+    width: auto;
+}
+
+header {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #007bff;
+}
+
+header a.active {
+    background-color: #0056b3;
+}
+.content {
+    display: flex;
+    margin: 20px;
+}
+
+.timeline {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timeline-header h2 {
+    margin: 0;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.circulars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.circular-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.circular-icon {
+    margin-right: 15px;
+}
+
+.circular-content {
+    flex: 1;
+}
+
+.circular-content a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.circular-description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.staff-options-container {
+    flex: 1;
+}
+
+.staff-options {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.staff-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.staff-options li {
+    margin-bottom: 10px;
+}
+
+.staff-option {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}

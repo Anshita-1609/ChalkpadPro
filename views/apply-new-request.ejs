@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply New Request</title>
+    <link rel="stylesheet" href="/applyreq.css">
+</head>
+
+<body>
+    <%- include('header', { u: u }) %>
+        <div class="content">
+            <h1>Apply New Request</h1>
+            <form action="/apply-new-request" method="POST">
+                <label for="requestTitle">Request Title:</label>
+                <input type="text" id="requestTitle" name="requestTitle" required>
+
+                <label for="requestContent">Request Content:</label>
+                <textarea id="requestContent" name="requestContent" rows="5" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+</body>
+
+</html>
